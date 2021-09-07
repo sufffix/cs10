@@ -1,0 +1,30 @@
+body {
+    text-align: center;
+    background: url(img/landscape.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Helvetica, sans-serif;
+    padding-top: 200px;
+}
+
+h1 {
+    font-size: 70px;
+    font-weight: 500;
+    
+}
+
+#focus {
+    font-size: 24px;
+    letter-spacing: 0.5px;
+    font-family:  Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 60px;
+}
+
+hr {
+    width: 600px;
+    border: 2px solid black;
+}
+
+#quote {
+    font-style: italic;
+}
