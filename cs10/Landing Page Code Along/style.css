@@ -1,7 +1,6 @@
 body {
     text-align: center;
-    background: url(img/landscape.jpg);
-    background-repeat: no-repeat;
+    background: url(img/landscape.jpg) no-repeat center fixed;
     background-size: cover;
     font-family: Helvetica, sans-serif;
     padding-top: 200px;
@@ -13,7 +12,7 @@ h1 {
     
 }
 
-#focus {
+#focusP {
     font-size: 24px;
     letter-spacing: 0.5px;
     font-family:  Verdana, Geneva, Tahoma, sans-serif;
