@@ -1,0 +1,52 @@
+html {
+    background: url(img/background.jpg) no-repeat center fixed;
+    background-size: cover;
+}
+
+body {
+    padding: 10px 10px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+    width: 700px;
+    margin: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+.topnav {
+    background-color: black;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.topnav a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-variant: small-caps;
+    width: 201px;
+}
+
+.topnav a:hover {
+    background-color: grey;
+    color: black;
+}
+
+.topnav a.active {
+    background: orange;
+}
+
+h1 {
+    font-variant: small-caps;
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
