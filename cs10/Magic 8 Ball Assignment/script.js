@@ -18,51 +18,38 @@ function getAnswer() {
     // check for predetermined answers 
     if (questionInEl.value === "Does a magic 8 ball actually work?" || questionInEl.value === "Do magic 8 balls actually work?") {
         answer = "How dare you doubt me!";
-        answerR();
+        answerParEl.style.color = "red";
 
     } else if (questionInEl.value === "") {
         answer = "Please ask a question.";
-        answerY();
+        answerParEl.style.color = "yellow";
 
     } else if (questionInEl.value === "Is JavaScript awesome?") {
         answer = "Of course!";
-        answerG();
+        answerParEl.style.color = "lime";
 
         // if no predetermined answer, find random answer
     } else if (answer < 0.2) { 
         answer = "Without a Doubt.";
-        answerG();
+        answerParEl.style.color = "lime";
 
     } else if (answer < 0.4) {
         answer = "As I see it, yes.";
-        answerG();
+        answerParEl.style.color = "lime";
 
     } else if (answer < 0.6) {
         answer = "Concentrate and ask again.";
-        answerY();
+        answerParEl.style.color = "yellow";
 
     } else if (answer < 0.8) {
         answer = "Don't count on it.";
-        answerR();
+        answerParEl.style.color = "red";
 
     } else if (answer > 0.8) {
         answer = "Outlook not so good.";
-        answerR();
+        answerParEl.style.color = "red";
 
     }
     // change html to display answer
     answerParEl.innerHTML = answer;
-}
-
-// Change colour functions
-function answerG() {
-    answerParEl.style.color = "lime";
-}
-
-function answerR() {
-    answerParEl.style.color = "red";
-}
-
-function answerY() {
-    answerParEl.style.color = "yellow";
 }
