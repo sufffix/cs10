@@ -19,14 +19,6 @@ img {
     cursor: pointer;
 }
 
-.answerG {
+#answerPar {
     color: lime;
-}
-
-.answerR {
-    color: red;
-}
-
-.answerY {
-    color: yellow;
 }

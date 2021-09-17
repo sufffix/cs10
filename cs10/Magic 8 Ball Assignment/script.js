@@ -56,19 +56,13 @@ function getAnswer() {
 
 // Change colour functions
 function answerG() {
-    answerParEl.classList.add("answerG");
-    answerParEl.classList.remove("answerR");
-    answerParEl.classList.remove("answerY");
+    answerParEl.style.color = "lime";
 }
 
 function answerR() {
-    answerParEl.classList.remove("answerG");
-    answerParEl.classList.add("answerR");
-    answerParEl.classList.remove("answerY");
+    answerParEl.style.color = "red";
 }
 
 function answerY() {
-    answerParEl.classList.remove("answerG");
-    answerParEl.classList.remove("answerR");
-    answerParEl.classList.add("answerY");
+    answerParEl.style.color = "yellow";
 }
