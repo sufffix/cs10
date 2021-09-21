@@ -57,7 +57,8 @@ function submitQuiz() {
         q4StatusEl.innerHTML = "Correct Answer: ESO Plus";
         q4StatusEl.style.color = "red";
     }
-        
+    
+    // display final score
     if (numCorrect > 2) {
         resultParEl.style.color = "lime";
         resultParEl.innerHTML = "You got " + numCorrect + " correct. Good job!";
