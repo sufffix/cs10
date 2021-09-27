@@ -10,15 +10,17 @@ let cloudR = 150;
 
 let sunPos = 300;
 let sunRad = 25;
+let sunR = 255;
+let sunG = 0;
 
 requestAnimationFrame(draw);
 function draw() {
     // update elements on canvas
     cloudL--;
     cloudR++;
-    
-    sunPos++;
-    sunRad++;
+    sunPos--;
+    sunRad += 0.1;
+    sunG++;
 
     // draw canvas
     ctx.fillStyle = "white"
@@ -29,7 +31,7 @@ function draw() {
     ctx.fillRect(0, 0, 400, 400);
 
     // draw sun
-    ctx.fillStyle = "red";
+    ctx.fillStyle = "rgb(255, " + sunG + ", 0)";
     ctx.beginPath();
     ctx.arc(200, sunPos, sunRad, 0, 2 * Math.PI);
     ctx.fill()
